@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'accounts',
     'blog',
     'django_bootstrap5',
+    'tinymce'
 ]
 
 MIDDLEWARE = [
@@ -128,3 +129,8 @@ STATIC_ROOT=BASE_DIR.joinpath('media')
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+TINYMCE_DEFAULT_CONFIG = {
+    "plugins": "advlist,autolink,lists,link,image,charmap,print,preview,anchor,"
+    "searchreplace,visualblocks,code,fullscreen,insertdatetime,media,table,paste,"
+    "code,help,wordcount",
+}
